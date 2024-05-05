@@ -1,0 +1,231 @@
+// newsletter
+
+
+// Footer
+.footer
+{
+    background: $secondary-color;
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    color: #ffffff;
+    gap: 32px;
+    .footer-top {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #1E57A5;
+        align-items: center;
+        .call-info {
+            @include font-size(24px);
+            margin-bottom: 20px;
+            text-align: center;
+            @include breakpoint(medium){
+                margin-bottom: 0;
+                text-align: left;
+            }
+            span {
+                font-weight: 500;
+                width: 100%;
+                @include breakpoint(medium){
+                    display: block;
+                    width: auto;
+                    text-align: left;
+                }
+            }
+            a {
+                font-weight: 700;
+                color: $primary-color;
+                display: inline-block;
+                margin-top: 16px;
+                display: block;
+                &:hover {
+                    text-decoration: underline;
+                }
+                    @include breakpoint(medium){
+                        display: inline-block;
+                        margin-top: 0;
+                    }
+            }
+        }
+        .footer-social-handles {
+            gap: 12px;
+            text-align: center;
+            @include breakpoint(medium){
+                text-align: left;
+            }
+            span {
+                margin-bottom: 12px;
+                display: block;
+                text-align: center;
+                @include breakpoint(medium){
+                    text-align: left;
+                    display: inline-block;
+                    margin-bottom: 0;
+                }
+            }
+            a {
+                color: #ffffff;
+                font-size: 24px;
+                display: inline-block;
+                transition: all ease 0.5s;
+                transform: scale(1);
+                img {
+                    width: 32px;
+                    margin: 0;
+                }
+                &:hover {
+                    transition: all ease 0.5s;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+    }
+    .footer-links {
+        .footer-link-divide {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .footer-associate-company {
+            display: inline-flex;
+            gap: 12px;
+            a {
+                display: inline-block;
+                img {
+                    width: 52px;
+                    max-width: none;
+                    margin: 0;
+                }
+            }
+        }
+        .footer-link-group {
+            margin-bottom: 24px;
+            @include breakpoint(medium) {
+                margin-bottom: 0;
+            }
+            .footer-link-title {
+                @include font-size(20px);
+                margin-bottom: 16px;
+            }
+            .footer-navigation {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .footer-nav {
+                    transition: all ease 0.5s;
+                    font-weight: 400;
+                    @include font-size(16px);
+                    line-height: 1.2;
+
+                    color: #ffffff;
+                    &:hover {
+                        transition: all ease 0.5s;
+                        padding-left: 5px;
+                        color: #ffffff;
+                    }
+                }
+                .footer-nav-group {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 0.25rem;
+                    i {
+                        margin-top: 3px;
+                        width: 20px;
+                    }
+                    .footer-nav-group-collect {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter-form {
+        background-color: $white-color;
+        padding: 8px 12px 8px 16px;
+        border-radius: 12px;
+        color: $dark-color;
+        width: 100%;
+        margin-top: 24px;
+
+        input[type="text"] {
+            width: calc(100% - 84px);
+            @include font-size(14px);
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button-fillup {
+            @include font-size(16px);
+            width: 84px;
+            min-width: 0;
+            height: 34px;
+            padding: 5px 16px;
+        }
+    }
+    .footer-copyright {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        .footer-company-info {
+            width: 100%;
+            display: flex;
+            flex-flow: column-reverse;
+            gap: 32px;
+            @include breakpoint(medium) {  
+                flex-flow: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .footer-company-term {
+                margin-bottom: 16px;
+                text-align: center;
+                @include breakpoint(medium) {  
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+            }
+            .pay-info {
+                text-align: center;
+                span {
+                    display: block;
+                    margin-bottom: 12px;
+                }
+                @include breakpoint(medium) {  
+                    span {
+                        display: inline-block;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+    @include breakpoint(medium) {      
+        .footer-links {
+            .footer-link-divide {
+                margin-bottom: 0;
+            }
+            .footer-link-group {
+                .footer-link-title {
+                    margin-bottom: 32px;
+                }
+                .footer-navigation {
+                    gap: 18px;
+                }
+            }
+        }
+        .footer-copyright {
+            flex-direction: row;
+        }
+    }
+}
+}
