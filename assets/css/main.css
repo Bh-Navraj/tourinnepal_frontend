@@ -15414,6 +15414,20 @@ body > .skiptranslate {
           transform: scale(1.2);
 }
 
+.package-image-wrap-full {
+  gap: 30px;
+  grid-template-rows: auto;
+  /* Large Devices, Wide Screens */
+}
+@media (min-width: 991px) {
+  .package-image-wrap-full {
+    grid-template-columns: 65% 31.2%;
+  }
+}
+.package-image-wrap-full a:first-child {
+  height: 375px;
+}
+
 .why-choose-wrapper {
   background-color: #F5F5F5;
 }
@@ -15872,6 +15886,11 @@ body > .skiptranslate {
   margin-top: 15px;
   /* Large Devices, Wide Screens */
 }
+.booknow-cart-wrapper.sticky-lg-top {
+  height: auto;
+  top: 104px;
+  z-index: 9;
+}
 @media (min-width: 991px) {
   .booknow-cart-wrapper {
     margin-top: 0;
@@ -15940,6 +15959,52 @@ body > .skiptranslate {
   line-height: 26px;
   color: #2a363b;
 }
+.booknow-cart-wrapper .booknow-cart .whatsapp a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.booknow-cart-wrapper .booknow-cart .whatsapp a i.fa-whatsapp {
+  color: #25D366;
+  font-size: 40px;
+}
+.booknow-cart-wrapper .booknow-cart .whatsapp a .whatsapp-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  color: #2a363b;
+}
+.booknow-cart-wrapper .booknow-cart .whatsapp a .whatsapp-text-wrap .whatsapp-text {
+  font-weight: 400;
+}
+.booknow-cart-wrapper .booknow-cart .whatsapp a .whatsapp-text-wrap .number {
+  font-size: 16px;
+  font-weight: 700;
+}
+.booknow-cart-wrapper .check-availability {
+  background: #053c87;
+  border: 1px solid #053c87;
+  color: #ffffff;
+}
+.booknow-cart-wrapper .cancel-note i {
+  color: #3cb371;
+  height: 24px;
+}
+.booknow-cart-wrapper .cancel-note p {
+  padding-left: 8px;
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0;
+}
 
 .detail-full-trip-wrap {
   /* Large Devices, Wide Screens */
@@ -15958,8 +16023,16 @@ body > .skiptranslate {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 44px;
-  width: 100%;
+  gap: 32px;
+}
+.detail-full-trip-wrap .detail-full-trip.pe-3 {
+  padding-right: 0 !important;
+  /* Large Devices, Wide Screens */
+}
+@media (min-width: 991px) {
+  .detail-full-trip-wrap .detail-full-trip.pe-3 {
+    padding-right: 1rem !important;
+  }
 }
 .detail-full-trip-wrap .detail-full-trip.detail-full-trip-full {
   width: 100%;
@@ -15988,8 +16061,7 @@ body > .skiptranslate {
   white-space: nowrap;
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section .trip-detail-section-title {
-  padding-bottom: 18px;
-  gap: 22px;
+  padding-bottom: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15998,7 +16070,7 @@ body > .skiptranslate {
           align-items: center;
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section .trip-detail-section-title.trip-section-border {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section .trip-detail-section-detail {
   display: -webkit-box;
@@ -16008,7 +16080,7 @@ body > .skiptranslate {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
+  gap: 24px;
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section .trip-detail-gallery {
   width: 100%;
@@ -16049,7 +16121,8 @@ body > .skiptranslate {
     padding: 16px 32px 16px 0;
   }
 }
-.detail-full-trip-wrap .detail-full-trip .trip-section .experience-fact ul li span, .detail-full-trip-wrap .detail-full-trip .trip-section .experience-fact ul li strong {
+.detail-full-trip-wrap .detail-full-trip .trip-section .experience-fact ul li span,
+.detail-full-trip-wrap .detail-full-trip .trip-section .experience-fact ul li strong {
   margin-top: 8px;
   display: block;
 }
@@ -16130,6 +16203,9 @@ body > .skiptranslate {
   position: absolute;
   left: 0;
   top: 0;
+}
+.detail-full-trip-wrap .detail-full-trip .trip-section .trip-detail-section-list-type .trip-detail-list-type-single-wrapper .trip-detail-list-type-single-list.exclude-list ul li:before {
+  content: "\f057";
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section .accommodations-day-wrapper {
   display: -webkit-box;
@@ -16224,7 +16300,7 @@ body > .skiptranslate {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 .detail-full-trip-wrap .detail-full-trip .trip-section.trip-detail-package .trip-detail-section-header .trip-detail-package-cart-wrapper {
   display: -webkit-box;
